@@ -17,7 +17,7 @@ const agregarAnimal = () => {
   let animal = [id, +billInput.value, +tipInput.value];
   listaAnimales.push(animal)
   id++;
-  calcularSolucion();
+  // calcularSolucion();
 }
 
 const calcularSolucion = () => {
