@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Expendio de leche</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container" id="topContainer">
+        <div class="title">Cabra</div>
+        <div class="inputContainer">
+          <span>L</span>
+          <input
+            type="text"
+            id="billTotalInput"
+            placeholder="Leche producida"
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div class="title">Peso</div>
+        <div class="inputContainer">
+          <span>kg</span>
+          <input
+            type="text"
+            id="tipInput"
+            placeholder="Peso en kg"
+          />
+        </div>
+      <button class="buttonContainer" onclick="agregarAnimal()">
+	<span class="buttonText ">Agregar cabra</span>
+      </button>
+      </div>
+
+      <div class="container" id="bottom">
+        <div class="totalContainer">
+          <div class="title">Solución óptima</div>
+          <div class="total" id="perPersonTotal">0 kg / 0 L</div>
+        </div>
+        <div class="splitContainer">
+          <div class="title">Oferta de cabras</div>
+          <div class="controls">
+		  <table id="oferta">
+			  <tr>
+				  <th>#</th>
+				  <th>Peso</th>
+				  <th>Litros</th>
+			  </tr>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
